@@ -4,7 +4,7 @@
   "description": "Model Context Protocol server for QodFlow. Lets AI agents (Claude Desktop, Cursor, ChatGPT Desktop) drive a QodFlow workspace through Personal Access Tokens.",
   "type": "module",
   "bin": {
-    "qodflow-mcp": "./dist/index.js"
+    "qodflow-mcp": "dist/index.js"
   },
   "files": [
     "dist",
@@ -30,8 +30,22 @@
     "typescript": "5.7.2"
   },
   "homepage": "https://www.qodflow.com/docs/mcp",
-  "repository": { "type": "git", "url": "git+https://github.com/qodflow/qodflow-mcp.git" },
-  "bugs": { "url": "https://github.com/qodflow/qodflow-mcp/issues" },
-  "keywords": ["mcp", "model-context-protocol", "kanban", "ai-agents", "claude-code", "cursor", "job-tracking", "sla"],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qodflow/qodflow-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/qodflow/qodflow-mcp/issues"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "kanban",
+    "ai-agents",
+    "claude-code",
+    "cursor",
+    "job-tracking",
+    "sla"
+  ],
   "license": "MIT"
 }
