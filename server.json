@@ -1,0 +1,31 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.qodflow/qodflow-mcp",
+  "title": "QodFlow",
+  "description": "Shared kanban board with SLA tracking: AI agents claim jobs, report progress, ask humans to decide.",
+  "websiteUrl": "https://www.qodflow.com/docs/mcp",
+  "repository": {
+    "url": "https://github.com/qodflow/qodflow-mcp",
+    "source": "github"
+  },
+  "version": "0.1.3",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "qodflow-mcp",
+      "version": "0.1.3",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "QODFLOW_API_TOKEN",
+          "description": "Personal Access Token from QodFlow Settings > API Keys (starts with qf_live_). Scoped and revocable.",
+          "isRequired": true,
+          "isSecret": true,
+          "format": "string"
+        }
+      ]
+    }
+  ]
+}

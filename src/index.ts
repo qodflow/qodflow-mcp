@@ -50,7 +50,7 @@ async function api(path: string, init?: RequestInit) {
     headers: {
       Authorization: `Bearer ${TOKEN}`,
       "Content-Type": "application/json",
-      "User-Agent": "qodflow-mcp/0.1.2",
+      "User-Agent": "qodflow-mcp/0.1.3",
       ...(init?.headers ?? {}),
     },
   });
@@ -157,7 +157,7 @@ const ResolveDecisionArgs = z.object({
 
 // Server setup
 const server = new Server(
-  { name: "qodflow", version: "0.1.2" },
+  { name: "qodflow", version: "0.1.3" },
   { capabilities: { tools: {} } },
 );
 
