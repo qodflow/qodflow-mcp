@@ -1,0 +1,37 @@
+{
+  "name": "qodflow-mcp",
+  "version": "0.1.2",
+  "description": "Model Context Protocol server for QodFlow. Lets AI agents (Claude Desktop, Cursor, ChatGPT Desktop) drive a QodFlow workspace through Personal Access Tokens.",
+  "type": "module",
+  "bin": {
+    "qodflow-mcp": "./dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsx watch src/index.ts",
+    "start": "node dist/index.js",
+    "prepublishOnly": "npm run build"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "//security": "E48 supply-chain hardening: deps pinned to exact versions (no caret). No postinstall script. CI must run `npm ci --ignore-scripts`. Update by editing manually + reviewing the diff in PR — never `npm update` or `dependabot auto-merge`.",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.32.1",
+    "zod": "3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "20.17.10",
+    "tsx": "4.23.15",
+    "typescript": "5.7.2"
+  },
+  "homepage": "https://www.qodflow.com/docs/mcp",
+  "repository": { "type": "git", "url": "git+https://github.com/qodflow/qodflow-mcp.git" },
+  "bugs": { "url": "https://github.com/qodflow/qodflow-mcp/issues" },
+  "keywords": ["mcp", "model-context-protocol", "kanban", "ai-agents", "claude-code", "cursor", "job-tracking", "sla"],
+  "license": "MIT"
+}
