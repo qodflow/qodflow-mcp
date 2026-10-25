@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "qodflow": {
+      "command": "npx",
+      "args": ["-y", "qodflow-mcp"],
+      "env": {
+        "QODFLOW_API_TOKEN": "qf_live_xxxxxxxx_xxxxxxxxxxxxxxxxxxxxxxxx"
+      }
+    }
+  }
+}
