@@ -66,7 +66,7 @@ For integration testing, toggle **Test mode** at token creation; the prefix beco
 | `update_stage`           | `stages:write` | any\*    | Rename a stage, change SLA/color, set `wipLimit` (1-99 or `null`; PREMIUM+, never blocks moves). |
 | `claim_job` / `release_job` | `mcp:claim`  | any    | Atomically claim/release a job (lease-based). |
 | `report_progress`        | `mcp:claim`    | any      | Append a progress note to a job's timeline. |
-| `request_human_decision` | `mcp:decide`   | any      | Ask a human to pick between options. Free: 10 per calendar month per team (402 `PLAN_LIMIT_REACHED` with an upgrade prompt after that); Premium and Diamond: unlimited. |
+| `request_human_decision` | `mcp:decide`   | any      | Ask a human to pick between options. Free: 10 per calendar month per team (402 `PAYMENT_REQUIRED` with an upgrade prompt after that); Premium and Diamond: unlimited. |
 | `resolve_decision`       | `mcp:resolve_decision` | any | Resolve an open decision. Only report an approval a human actually gave in this chat, and quote it: board approvals are recorded separately and shown as verified, chat approvals are shown as reported by the agent. |
 | `get_briefing`           | `jobs:read`    | any      | What this agent should know now: decisions waiting on humans, approvals not acknowledged yet, expired decisions (do not proceed), jobs it holds, new human notes. |
 | `ack_decision`           | `mcp:decide`   | any      | Mark a resolved or expired decision as read so it stops repeating in the briefing. |

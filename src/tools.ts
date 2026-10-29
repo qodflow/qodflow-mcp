@@ -387,7 +387,7 @@ export const TOOLS = [
   {
     name: "request_human_decision",
     description:
-      "Ask the human team to pick one of 2-6 structured options. Creates a DecisionRequest that appears in their /my-tasks inbox. Free: 10 per calendar month per team (402 PLAN_LIMIT_REACHED with an upgrade prompt after that); Premium and Diamond: unlimited. Requires mcp:decide.",
+      "Ask the human team to pick one of 2-6 structured options. Creates a DecisionRequest that appears in their /my-tasks inbox. Free: 10 per calendar month per team (402 PAYMENT_REQUIRED with an upgrade prompt after that); Premium and Diamond: unlimited. Requires mcp:decide.",
     annotations: WRITE_NONDESTR,    inputSchema: {
       type: "object",
       required: ["jobId", "question", "options"],
