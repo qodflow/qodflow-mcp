@@ -8,12 +8,12 @@
     "url": "https://github.com/qodflow/qodflow-mcp",
     "source": "github"
   },
-  "version": "0.1.3",
+  "version": "0.2.0",
   "packages": [
     {
       "registryType": "npm",
       "identifier": "qodflow-mcp",
-      "version": "0.1.3",
+      "version": "0.2.0",
       "transport": {
         "type": "stdio"
       },

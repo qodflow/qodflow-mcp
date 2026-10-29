@@ -1,6 +1,6 @@
 {
   "name": "qodflow-mcp",
-  "version": "0.1.3",
+  "version": "0.2.0",
   "mcpName": "com.qodflow/qodflow-mcp",
   "description": "Model Context Protocol server for QodFlow. Lets AI agents (Claude Desktop, Cursor, ChatGPT Desktop) drive a QodFlow workspace through Personal Access Tokens.",
   "type": "module",
